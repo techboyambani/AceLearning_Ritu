@@ -1,168 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-app:layout_behavior="@string/appbar_scrolling_view_behavior"
-android:fitsSystemWindows="true"
-tools:context="com.example.dell.acelearning.signup_fac">
-
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/forgot"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="@dimen/activity_horizontal_margin">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dell.acelearning.signup_fac">
 
     <TextView
-        android:layout_width="@dimen/img_width_height"
-        android:layout_height="51dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/sign"
-        android:src="@mipmap/ic_launcher" />
+        android:id="@+id/textView1"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:gravity="center"
+        android:text="@string/faculty_sign_up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/uname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:layout_width="313dp"
-        android:layout_height="37dp"
         android:id="@+id/uname"
-        android:paddingLeft="50dp"
-        android:ems="10"
-        android:textColorHint="@android:color/black"
-        android:background="@drawable/user"
-        android:textCursorDrawable="@android:color/black"
+        android:layout_width="320dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:textColor="@android:color/black"
-        android:hint="Name"/>
-
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="313dp"
-        android:layout_height="37dp"
-        android:hint="Email"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/email"
+        android:layout_width="320dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:maxLines="1"
-        android:paddingLeft="50dp"
-        android:singleLine="true"
-        android:textColorHint="@android:color/black"
-        android:textColor="@android:color/black" />
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/phn_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/phn_no"
-        android:layout_width="313dp"
-        android:layout_height="37dp"
-        android:ems="10"
-        android:background="@drawable/mobile"
-        android:textColorHint="@android:color/black"
-        android:textColor="@android:color/black"
+        android:layout_width="320dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:hint="@string/mobile"
         android:inputType="phone"
-        android:textCursorDrawable="@android:color/black"
-        android:singleLine="true"
-        android:layout_marginTop="5dp"
-        android:paddingLeft="50dp"
-        android:hint="Mobile no"/>
-
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="313dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/pssword"
-        android:hint="@string/hint_password"
+        android:layout_width="320dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:hint="@string/password"
         android:inputType="textPassword"
-        android:paddingLeft="50dp"
+        android:paddingLeft="10dp"
         android:textColor="@android:color/black"
-        android:textColorHint="@android:color/black"
-        android:textCursorDrawable="@drawable/color_cursor" />
-    <LinearLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:orientation="horizontal">
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/empty_button"
+        android:spinnerMode="dialog"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
     <TextView
-        android:layout_width="130dp"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select subject"
-        android:ems="10"
-        android:textSize="18dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/whit" />
+        android:fontFamily="@font/googlesans_bold"
+        android:text="@string/subject"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="396dp" />
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:spinnerMode="dropdown"
-            android:background="@color/whit"
-            android:visibility="visible" />
-    </LinearLayout>
     <TextView
-        android:layout_width="300dp"
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Upload subject"
-        android:ems="10"
-        android:textSize="18dp"
-        android:padding="5dp"
-        android:textColor="@color/whit" />
-    <LinearLayout
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/submit_resume"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sign_up_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        tools:fontFamily="@font/googlesans_bold" />
 
-        android:layout_width="311dp"
-        android:layout_height="34dp"
-        android:orientation="horizontal">
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/empty_button"
+        android:fontFamily="@font/googlesans_bold"
+        android:onClick="choosefile"
+        android:text="@string/select_file"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sign_up_button"
+        app:layout_constraintEnd_toStartOf="@+id/upload"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
 
-        <Button
-            android:id="@+id/choose"
-            android:layout_width="155dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/sfile"
-            android:onClick="choosefile" />
-
-        <Button
-            android:id="@+id/upload"
-            android:layout_width="155dp"
-            android:layout_height="34dp"
-            android:layout_marginLeft="2dp"
-            android:background="@drawable/ufile"
-            android:onClick="upd" />
-    </LinearLayout>
-
-
-
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/empty_button"
+        android:fontFamily="@font/googlesans_bold"
+        android:onClick="upd"
+        android:text="@string/upload_file"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sign_up_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/choose"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
 
     <Button
         android:id="@+id/sign_up_button"
-        style="?android:textAppearanceSmall"
-        android:layout_width="311dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/signbtn"
-        android:textColor="@android:color/black"
-        android:textStyle="bold" />
-
-
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/login_button"
+        android:fontFamily="@font/googlesans_bold"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
 
     <Button
         android:id="@+id/sign_in_button"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:background="@null"
-        android:text="Login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/signup_button"
+        android:fontFamily="@font/googlesans_bold"
+        android:text="@string/back_log_in"
         android:textAllCaps="false"
-        android:textColor="@color/whit"
-        android:textSize="15dp" />
-</LinearLayout>
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
 
-<ProgressBar
-    android:id="@+id/progressBar"
-    android:layout_width="30dp"
-    android:layout_height="30dp"
-    android:layout_gravity="center|bottom"
-    android:layout_marginBottom="20dp"
-    android:visibility="gone" />
-</android.support.design.widget.CoordinatorLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

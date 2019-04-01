@@ -1,5 +1,47 @@
 <resources>
+    <!--activity_login.xml-->
+    <string name="logo">Logo</string>
     <string name="app_name">Ace Learning</string>
+    <string name="email">abc@xyz.com</string>
+    <string name="password">*****</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="register_now">No account ? Register now</string>
+
+    <!--activity_signup.xml-->
+    <string name="faculty">Faculty</string>
+    <string name="student">Student</string>
+    <string name="back_log_in">Back to Log In</string>
+
+    <!--activity_signup_fac.xml-->
+    <string name="faculty_sign_up">Faculty Sign Up</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="subject">Subject</string>
+    <string name="select_file">Select File</string>
+    <string name="upload_file">Upload File</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="submit_resume">Submit Resume</string>
+
+    <!--activity_student_signup.xml-->
+    <string name="student_sign_up">Student Sign Up</string>
+
+    <!--activity_reset_password.xml-->
+    <string name="reset_password">Reset Password</string>
+    <string name="back">Back</string>
+
+    <!--activity_admin_home.xml-->
+    <string name="admin_home">Welcome Admin!</string>
+    <string name="log_out">Log Out</string>
+
+    <!--user_layout.xml-->
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="view_resume">View Resume</string>
+    <string name="raj_ambani">Raj Ambani</string>
+    <string name="raj_email">techboyambani@gmail.com</string>
+    <string name="resume">View Resume</string>
+
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
     <string name="skip">SKIP</string>
@@ -19,7 +61,6 @@
     <string name="hint_password">Password</string>
     <string name="minimum_password">6</string>
     <string name="auth_failed">Authentication failed, check your email and password or register</string>
-    <string name="subject">subject</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
