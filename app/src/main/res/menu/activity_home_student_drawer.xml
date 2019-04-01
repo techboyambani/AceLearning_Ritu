@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+tools:showIn="navigation_view">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/student_home"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/student_doubt"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="Ask Doubts" />
+    <item
+        android:id="@+id/student_testscore"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="View test scores" />
+    <item
+        android:id="@+id/changepassword"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="Change Password" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="Logout" />
+</group>
+</menu>

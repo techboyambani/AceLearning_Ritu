@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+android:fitsSystemWindows="true"
+tools:context="com.example.dell.acelearning.signup_fac">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/forgot"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="@dimen/img_width_height"
+        android:layout_height="51dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/sign"
+        android:src="@mipmap/ic_launcher" />
+
+    <EditText
+        android:layout_width="313dp"
+        android:layout_height="37dp"
+        android:id="@+id/uname"
+        android:paddingLeft="50dp"
+        android:ems="10"
+        android:textColorHint="@android:color/black"
+        android:background="@drawable/user"
+        android:textCursorDrawable="@android:color/black"
+        android:textColor="@android:color/black"
+        android:hint="Name"/>
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="313dp"
+        android:layout_height="37dp"
+        android:hint="Email"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingLeft="50dp"
+        android:singleLine="true"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/phn_no"
+        android:layout_width="313dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:background="@drawable/mobile"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:inputType="phone"
+        android:textCursorDrawable="@android:color/black"
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="50dp"
+        android:hint="Mobile no"/>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="313dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pssword"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:paddingLeft="50dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textCursorDrawable="@drawable/color_cursor" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Select subject"
+        android:ems="10"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/whit" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:background="@color/whit"
+            android:visibility="visible" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Upload subject"
+        android:ems="10"
+        android:textSize="18dp"
+        android:padding="5dp"
+        android:textColor="@color/whit" />
+    <LinearLayout
+
+        android:layout_width="311dp"
+        android:layout_height="34dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/choose"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sfile"
+            android:onClick="choosefile" />
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="155dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/ufile"
+            android:onClick="upd" />
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/sign_up_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="311dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/signbtn"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/whit"
+        android:textSize="15dp" />
+</LinearLayout>
+
+<ProgressBar
+    android:id="@+id/progressBar"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_gravity="center|bottom"
+    android:layout_marginBottom="20dp"
+    android:visibility="gone" />
+</android.support.design.widget.CoordinatorLayout>
