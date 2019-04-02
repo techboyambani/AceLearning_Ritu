@@ -13,10 +13,8 @@
             android:layout_height="?attr/actionBarSize"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-
-
-    <include layout="@layout/content_home_fac" />
-
-
+    <include
+        layout="@layout/content_home_fac"
+        android:visibility="visible" />
 
 </android.support.design.widget.CoordinatorLayout>

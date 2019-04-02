@@ -42,6 +42,21 @@
     <string name="raj_email">techboyambani@gmail.com</string>
     <string name="resume">View Resume</string>
 
+    <!--content_home_fac.xml-->
+    <string name="welcome_faculty">Welcome Faculty</string>
+    <string name="upload_nla">Upload Notes, Lectures, Assignments</string>
+    <string name="test">Test</string>
+    <string name="student_score">View Student Score</string>
+    <string name="doubt_solving">Doubt Solving</string>
+    <string name="swipe_left">Swipe Left for Menu</string>
+
+    <!--activity_upload_material.xml-->
+    <string name="upload_material">Upload Study Material</string>
+    <string name="upload_as">Upload File As</string>
+    <string name="file_name">Name of file</string>
+    <string name="done">Done</string>
+    <string name="back_home">Back to Home</string>
+
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
     <string name="skip">SKIP</string>

@@ -1,103 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-tools:context=".upload_material"
-    android:background="@drawable/forgot"
->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".upload_material">
 
-    <TextView android:layout_width="265dp"
-    android:layout_height="42dp"
-    android:layout_marginTop="20dp"
-    android:layout_centerHorizontal="true"
-    android:gravity="center_horizontal"
-        android:layout_gravity="center_horizontal"
-    android:text="Upload Study Material"
-    android:textSize="25dp"
-    android:textColor="@android:color/white"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:visibility="visible">
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="278dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:gravity="center"
+        android:text="@string/upload_material"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="10sp"
-            android:text="Upload file as "
-            android:textSize="20dp"
-            android:textColor="@android:color/white"/>
-
-        <Spinner
-            android:id="@+id/filetype"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:spinnerMode="dropdown"
-            android:visibility="visible"
-            android:background="@color/whit"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="175dp" />
-    </LinearLayout>
-    <EditText
-
-        android:id="@+id/title"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:hint="Enter Title of File"
-        android:layout_gravity="center_horizontal"
-        android:paddingLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:textColorHint="@android:color/black"
-        android:textColor="@android:color/black"
-        android:background="@drawable/blank"/>
-    <LinearLayout
+    <TextView
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:orientation="horizontal">
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:text="@string/upload_as"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintEnd_toStartOf="@+id/filetype"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
 
 
-        <Button
-            android:layout_height="30dp"
-            android:layout_width="160dp"
-            android:background="@drawable/sfile"
-            android:onClick="choosefile"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:id="@+id/choose"
-            />
+    <Spinner
+        android:id="@+id/filetype"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/signup_button"
+        android:spinnerMode="dialog"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
 
-        <Button
-            android:id="@+id/upload_lectures"
-            android:layout_width="160dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/ufile"
-            android:onClick="upd" />
-    </LinearLayout>
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="320dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:hint="@string/file_name"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
 
     <Button
-    android:id="@+id/ok"
-    android:layout_width="311dp"
-    android:layout_height="34dp"
-    android:background="@drawable/done"
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center_horizontal"
-    android:onClick="regcomp"/>
+        android:id="@+id/choose"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/empty_button"
+        android:fontFamily="@font/googlesans_bold"
+        android:onClick="choosefile"
+        android:text="@string/select_file"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ok"
+        app:layout_constraintEnd_toStartOf="@+id/upload_lectures"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <Button
+        android:id="@+id/upload_lectures"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/empty_button"
+        android:fontFamily="@font/googlesans_bold"
+        android:onClick="upd"
+        android:text="@string/upload_file"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/choose"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/login_button"
+        android:fontFamily="@font/googlesans_bold"
+        android:onClick="regcomp"
+        android:text="@string/done"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
     <Button
         android:id="@+id/back"
-        android:layout_width="311dp"
-        android:layout_height="34dp"
-        android:background="@drawable/back"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        />
-</LinearLayout>
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/signup_button"
+        android:fontFamily="@font/googlesans_bold"
+        android:text="@string/back_home"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+</android.support.constraint.ConstraintLayout>
