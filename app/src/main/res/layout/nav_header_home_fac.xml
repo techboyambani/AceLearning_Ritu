@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/d"
+    android:background="@drawable/navbar_header"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -18,11 +18,16 @@
         android:id="@+id/u_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/googlesans_bold"
+        android:textColor="@color/navbar_header_text"
+        android:textSize="18dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
         android:id="@+id/u_email"
+        android:fontFamily="@font/googlesans_bold"
+        android:textColor="@color/navbar_header_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
          />

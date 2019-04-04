@@ -5,7 +5,8 @@
     <color name="colorAccent">#F5EDF0</color>
     <color name="title">#152960</color>
     <color name="whit">#F5EEEE</color>
-
+    <color name="radio_black">#000000</color>
+    <color name="navbar_header_text">#ffffff</color>
     <color name="bg">#03a9f4</color>
     <!-- Screens background color-->
     <color name="bg_slider_screen1">#f4b241</color>

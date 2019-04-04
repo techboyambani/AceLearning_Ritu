@@ -57,6 +57,24 @@
     <string name="done">Done</string>
     <string name="back_home">Back to Home</string>
 
+    <!--activity_updquesobj.xml-->
+    <string name="obj_ques">Objective Question</string>
+    <string name="select_ques_type">Select Type of Question</string>
+    <string name="enter_ques">Enter Question</string>
+    <string name="op1">Op. 1</string>
+    <string name="op2">Op. 2</string>
+    <string name="op3">Op. 3</string>
+    <string name="op4">Op. 4</string>
+    <string name="select_ans">Select Answer</string>
+    <string name="insert_ques">Submit</string>
+
+    <!--activity_updquessub.xml-->
+    <string name="sub_ques">Subjective Question</string>
+
+    <!--content_changepassword.xml-->
+    <string name="old_pass">Enter old password</string>
+    <string name="new_pass">Enter new password</string>
+
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
     <string name="skip">SKIP</string>
