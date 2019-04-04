@@ -75,6 +75,13 @@
     <string name="old_pass">Enter old password</string>
     <string name="new_pass">Enter new password</string>
 
+    <!--activity_result.xml-->
+    <string name="test_result">Test Results</string>
+    <string name="total_ques">Total Questions</string>
+    <string name="correct_ans">Correct Answers</string>
+    <string name="wrong_ans">Wrong Answers</string>
+    <string name="text_view">Text View</string>
+
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
     <string name="skip">SKIP</string>
